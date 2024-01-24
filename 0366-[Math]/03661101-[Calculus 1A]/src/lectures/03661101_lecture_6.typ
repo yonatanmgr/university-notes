@@ -1,11 +1,10 @@
-#import "../template.typ": *
+#import "/0366-[Math]/globals/template.typ": *
 
 #show: project.with(
-  title: "חדוא 1א׳ - שיעור 6",
+  title: "חדו״א 1א׳ - שיעור 6",
   authors: ("יונתן מגר",),
   date: "16 בינואר, 2024",
 )
-
 #set enum(numbering: "(1.א)")
 
 = טענות נוספות על התכנסות סדרות

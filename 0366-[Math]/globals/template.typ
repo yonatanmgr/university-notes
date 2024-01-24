@@ -1,4 +1,5 @@
 #import "functions.typ": *
+
 #let project(title: "", authors: (), date: none, body) = {
   // Set the document's basic properties.
   set document(author: authors, title: title)
@@ -27,5 +28,32 @@
   // Main body.
   set par(justify: true)
 
+  // Headings Numbering //
+  //
+  set heading(numbering: (..nums) => {
+    let nums = nums.pos()
+    if nums.len() < 4 {
+      numbering("1.1", ..nums)
+    }
+  })
+  
+  show heading: it => block({
+    // sans font for headings
+    if it.numbering != none {
+      numbering(it.numbering, ..counter(heading).at(it.location()))
+      // add the trailing dot here
+      if it.level < 4 { [. ] }
+    }
+    it.body
+  })
+  
+  // level 1 headings start new pages and have some vertical spacing
+  show heading.where(level: 1): it => {
+    it
+    v(0.3cm)
+  }
+  //
+  // Heading Numbering Ends Here
+  
   body
 }

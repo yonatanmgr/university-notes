@@ -1,14 +1,15 @@
-#import "../template.typ": *
+#import "/0366-[Math]/globals/template.typ": *
 
 #show: project.with(
-  title: "חדוא 1א׳ - שיעור 7",
+  title: "חדו״א 1א׳ - שיעור 7",
   authors: ("יונתן מגר",),
   date: "18 בינואר, 2024",
 )
 
 #set enum(numbering: "(1.א)")
+
 = תתי-סדרות
-=== דוגמה
+== דוגמה
 תהא סדרה $a_n$: $ a_n: 1, 1/2, 1/3, dots $
 ותת-סדרה $b_k$: $ b_k: underbracket(b_1=1/3, (a_3)), underbracket(b_2= 1/7, (a_7)), underbracket(b_3=1/101, (a_101)), dots $
 
@@ -79,7 +80,7 @@
 
 אזי קיימת נקודה יחידה המשותפת לכל הקטעים: $sect.big_(n=1)^oo I_n = {c}$.
 
-=== הוכחה
+== הוכחה
 נתון: $ a_1<=a_2<= dots <= a_(n-1) <= a_n < b_n <= b_(n-1) <= dots <= b_2 <= b_1, forall n in NN $
 מכאן, $(a_n)$ עולה וחסומה מלמעלה, למשל, ע״י $b_1$. לכן $exists lim an = sup an =: a$. בדומה, $(b_n)$ יורדת וחסומה מלמטה, למשל, ע״י $a_1$. לכן $exists lim b_n = inf b_n =: b$. נקבל $0 = lim (b_n - a_n) = b-a$ $arrl$ $a=b$. נראה כעת שהנקודה $a=b$ הינה הנקודה המבוקשת $c$. ברור כי $ forall m in NN, a_m <= sup a_n = a = b = inf b_n <= b_m $
 
@@ -102,6 +103,6 @@ $
 
 ואינסוף מאיברי הסדרה ($c_n$) מוכלים בקטע $[a_k, b_k]$ לכל $k$ טבעי.
 
-#align(center, image("../attachments/image.png", height: 5cm))
+#align(center, image("../attachments/image.png", height: 4.9cm))
 
 ואז לפי הלמה של קנטור $exists c in sect.big_(k=0)^oo [a_k, b_k]$ יחיד. נוכיח כעת ש-$c$ הינו הגבול של איזושהי תת״ס של $(c_n)$. נבנה תת״ס המתכנסת ל-$c$: נבחר $c_n_1 in [a_1, b_1]$ ו-$n_2> n_1$, $c_n_2 in [a_2, b_2]$ וכו׳ $n_k > n_(k-1)$ ומתקיים $c_n_k in [a_k, b_k]$ לכל $k>=3$ באופן אינדוקטיבי. נראה כי $a_k <= c_n_k <= b_k$, ומכלל הסנדוויץ׳ $c_n_k -> c$. #QED

@@ -1,4 +1,4 @@
-#import "../template.typ": *
+#import "/0366-[Math]/globals/template.typ": *
 
 #show: project.with(
   title: "אלגברה לינארית 1א׳ - שיעור 4",

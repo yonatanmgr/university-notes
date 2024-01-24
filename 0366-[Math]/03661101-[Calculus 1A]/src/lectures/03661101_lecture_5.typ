@@ -1,7 +1,7 @@
-#import "../template.typ": *
+#import "/0366-[Math]/globals/template.typ": *
 
 #show: project.with(
-  title: "חדוא 1א׳ - שיעור 5",
+  title: "חדו״א 1א׳ - שיעור 5",
   authors: ("יונתן מגר",),
   date: "11 בינואר, 2024",
 )

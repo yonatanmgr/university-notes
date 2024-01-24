@@ -1,0 +1,6 @@
+.vscode
+.local
+.DS_Store
+
+*/*/src/lectures/*.pdf
+*/globals/*.pdf

@@ -1,4 +1,4 @@
-#import "../template.typ": *
+#import "/0366-[Math]/globals/template.typ": *
 #import "@preview/colorful-boxes:1.2.0": *
 
 #show: project.with(
