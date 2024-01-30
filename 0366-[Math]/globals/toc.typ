@@ -13,6 +13,6 @@
       })
     }
   })
-  outline(title: "תוכן העניינים", depth: 4, indent: true)
+  outline(title: "תוכן העניינים", depth: 2, indent: true)
   pagebreak(weak: true)
 }

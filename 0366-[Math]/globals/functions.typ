@@ -26,7 +26,7 @@
 #let of = $compose$
 #let pm = $plus.minus$
 #let char(f) = $"char"(#f)$
-#let liminf(x) = $limits(lim #x)_(n->oo)$
+#let liminff(x) = $limits(lim)_(n->oo) #x$
 #let limitn = $limits(lim)_(n->oo)$
 #let arrl = $arrow.l.double$
 #let an = $a_n$
