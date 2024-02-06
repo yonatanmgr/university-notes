@@ -31,3 +31,6 @@
 #let arrl = $arrow.l.double$
 #let an = $a_n$
 #let span = $"Span"$
+#let ank = $a_n_k$
+#let suminf(a,k) = $sum_(#k=1)^oo #a _#k$
+#let arrr = $arrow.r.double$
