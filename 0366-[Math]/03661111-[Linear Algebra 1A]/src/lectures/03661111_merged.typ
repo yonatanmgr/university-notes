@@ -5,6 +5,8 @@
   authors: ("יונתן מגר",),
   date: "סמסטר א׳ - 2024",
 )
+ֿ
+#place(center)[עדכני נכון ל-#datetime.today().display("[day]/[month]/[year]")]
 
 #set enum(numbering: "(1.א)")
 #include "/0366-[Math]/globals/toc.typ"
@@ -26,3 +28,9 @@
 #include "03661111_lecture_10.typ"
 #pagebreak()
 #include "03661111_lecture_11.typ"
+#pagebreak()
+#include "03661111_lecture_12.typ"
+#pagebreak()
+#include "03661111_lecture_13.typ"
+#pagebreak()
+#include "03661111_lecture_14.typ"
